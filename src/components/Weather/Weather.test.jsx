@@ -1,4 +1,4 @@
-/*import React from 'react'
+import React from 'react'
 import Weather from './Weather'
 import {render} from '@testing-library/react'
 import '@testing-library/jest-dom/extend-expect'
@@ -12,4 +12,4 @@ test("Weather render", async()=>{
  expect(temp).toHaveTextContent("10")
  
 
-})*/
+})

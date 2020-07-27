@@ -1,4 +1,4 @@
-/*import React from 'react'
+import React from 'react'
 import {render} from '@testing-library/react'
 import 'jest-dom/extend-expect'
 import CityInfo from './CityInfo' //SUT: Subject under testing
@@ -24,4 +24,4 @@ test("CityInfo render", async () =>{
 
    //Si estas condiciones se cumplen ( expect), el test está ok
 
-})*/
+})
