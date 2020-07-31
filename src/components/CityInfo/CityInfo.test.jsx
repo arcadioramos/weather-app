@@ -1,6 +1,5 @@
 import React from 'react'
 import {render} from '@testing-library/react'
-import 'jest-dom/extend-expect'
 import CityInfo from './CityInfo' //SUT: Subject under testing
 test("CityInfo render", async () =>{
    //AAA
