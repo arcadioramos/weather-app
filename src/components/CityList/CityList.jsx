@@ -42,7 +42,7 @@ const CityList = ({ cities,onClickCity }) => {
         </ul>
     )
 }
-
+//Mejorar validación
 CityList.propTypes = {
     cities: PropTypes.array.isRequired,
     onClickCity: PropTypes.func.isRequired,
