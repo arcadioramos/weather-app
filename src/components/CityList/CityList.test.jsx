@@ -11,7 +11,7 @@ const cities = [
 test("CitiList renders", async () => {
     //AAA Arrange Act Assert
     const { findAllByRole } = render(<CityList cities={cities}></CityList>)
-    const items = await findAllByRole("listitem")
+    const items = await findAllByRole("button")
     expect(items).toHaveLength(3)
 })
 
@@ -22,7 +22,7 @@ test("CityList click on item", async () => {
     const fnClickOnItem = jest.fn()
 
     const { findAllByRole } = render(<CityList cities={cities} onClickCity={fnClickOnItem}></CityList>)
-    const items = await findAllByRole("listitem")
+    const items = await findAllByRole("button")
     //Sigue simular la acción del método utilizando fireEvent
     //fireEvent es parte de la librería testing-library/react
     fireEvent.click(items[0])

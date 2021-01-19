@@ -3,6 +3,9 @@ import PropTypes from 'prop-types'
 import Grid from '@material-ui/core/Grid'
 import CityInfo from './../CityInfo'
 import Weather from './../Weather'
+import List from '@material-ui/core/List'
+import ListItem from '@material-ui/core/ListItem'
+
 
 
 const renderCityAndCountry = eventOnClickCity => cityAndCountry => {
@@ -10,7 +13,8 @@ const renderCityAndCountry = eventOnClickCity => cityAndCountry => {
     //li : es un item en html que sirve para poner un item
     return (
 
-        <li key={city} onClick={eventOnClickCity}>
+        <ListItem key={city} onClick={eventOnClickCity}
+        button>
             <Grid container
                 justify="center"
                 alignItems="center">
@@ -25,7 +29,7 @@ const renderCityAndCountry = eventOnClickCity => cityAndCountry => {
                     <Weather temperature={10} state="rain"></Weather>
                 </Grid>
             </Grid>
-        </li>
+        </ListItem>
     )
     
 }
@@ -35,11 +39,11 @@ const renderCityAndCountry = eventOnClickCity => cityAndCountry => {
 //renderCityAndCountry se va a convertir en una función que retorna otra función
 const CityList = ({ cities,onClickCity }) => {
     return (
-        <ul>
+        <List>
             {
                 cities.map(cityAndCountry => renderCityAndCountry(onClickCity)(cityAndCountry))
             }
-        </ul>
+        </List>
     )
 }
 //Mejorar validación
