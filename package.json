@@ -11,7 +11,7 @@
     "react-dom": "^16.13.1",
     "react-icons": "^3.10.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "^4.0.1",
+    "react-scripts": "^5.0.1",
     "recharts": "^1.8.5",
     "three": "^0.115.0",
     "typeface-roboto": "^0.0.75",
@@ -46,6 +46,6 @@
     "@storybook/addon-viewport": "^5.3.19",
     "@storybook/addons": "^5.3.19",
     "@storybook/preset-create-react-app": "^3.1.4",
-    "@storybook/react": "^5.3.19"
+    "@storybook/react": "^7.0.6"
   }
 }
